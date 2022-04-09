@@ -7,16 +7,20 @@
   let success = false;
 
   const postComment = async () => {
-    const { data, error } = await supabase
-      .from("comments")
-      .insert([{ name: name, email: email, postURL: url, comment: comment }]);
-    if (data) {
-      success = true;
-      alert("Commented Succesfully");
-      name = null;
-      email = null;
-      comment = null;
-      window.location.reload();
+    if (name && email && comment) {
+      const { data, error } = await supabase
+        .from("comments")
+        .insert([{ name: name, email: email, postURL: url, comment: comment }]);
+      if (data) {
+        success = true;
+        alert("Commented Succesfully");
+        name = null;
+        email = null;
+        comment = null;
+        window.location.reload();
+      }
+    } else {
+      alert("Please fill all the fields");
     }
   };
 </script>
