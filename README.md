@@ -88,6 +88,8 @@ yarn build
 
 - This will create a `comments.js` & `comments.css` files under the `pubic/build` directory.
 
+- Copy and paste the two files to root of your static website or blog.
+
 ### :pen: Usage
 
 - To import the `comments.js` & `comments.css` file, paste the below code before `</head>` closing tag.
