@@ -105,6 +105,18 @@ If you open your static website or blog, you will see the comments section like 
 
 ![Comments Example](./images/comments.png)
 
+### :white_check_mark: TODO
+
+- [ ] Ability to add comment section based on div element
+- [ ] Click to load user's comments
+- [ ] Add native styling instead of Tailwind CSS
+- [ ] Add Docker support
+- [ ] Add Reply to comment feature
+- [ ] Add ability to edit and delete comment
+- [ ] Add ability to add comment as logged in user or anonymous user
+- [ ] Add Admin Panel for managing comments (As Monorepo)
+
+> These are the planned features, if you have any feature request, please open an feature request on [Github](https://github.com/mcnaveen/SupaComments/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
 ### :pray: Additional Information
 
