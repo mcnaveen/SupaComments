@@ -4,7 +4,6 @@
   import AllComments from "./components/AllComments.svelte";
   import CommentBox from "./components/CommentBox.svelte";
   const supaCommentHost = __api.env.SUPACOMMENT_HOST_URL;
-  console.log(hostURL)
 </script>
 
 <main>

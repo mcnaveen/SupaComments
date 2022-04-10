@@ -6,21 +6,30 @@
   let comment;
   let success = false;
 
-  const postComment = async () => {
-    if (name && email && comment) {
-      const { data, error } = await supabase
-        .from("comments")
-        .insert([{ name: name, email: email, postURL: url, comment: comment }]);
+  const checkAndInsert = async () => {
+    if (name && comment) {
+      const { data, error } = await supabase.from("comments").insert({
+        postURL: url,
+        name: name,
+        email: email,
+        comment: comment,
+        show: true,
+      });
+
       if (data) {
         success = true;
         alert("Commented Succesfully");
-        name = null;
-        email = null;
-        comment = null;
+        name = "";
+        email = "";
+        comment = "";
         window.location.reload();
       }
+
+      if (error) {
+        console.log(error);
+      }
     } else {
-      alert("Please fill all the fields");
+      alert("Please fill in all fields");
     }
   };
 </script>
@@ -48,7 +57,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="email"
             type="email"
-            placeholder="Email"
+            placeholder="Email (Optional)"
             bind:value={email}
           />
         </div>
@@ -66,7 +75,7 @@
           <button
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             on:click={() => {
-              postComment();
+              checkAndInsert();
             }}
           >
             Submit Comment!
@@ -77,4 +86,6 @@
   </div>
 </main>
 
-<style></style>
+<style>
+  
+</style>
