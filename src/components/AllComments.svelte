@@ -42,7 +42,7 @@
                 <img
                   class="w-10 h-10 rounded-full mr-4"
                   src={`data:image/svg+xml;utf8,${generateFromString(
-                    comment.email
+                    comment.email || comment.name
                   )}`}
                   alt="avatar"
                 />
