@@ -1,7 +1,9 @@
 import App from './App.svelte';
 
+let comments = document.getElementById('comments');
+
 const app = new App({
-	target: document.body,
+	target: comments,
 });
 
 export default app;

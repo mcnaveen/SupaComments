@@ -93,10 +93,17 @@ yarn build
 
 - Then, import the `bundle.js` & `index.css` file in your static website or blog.
 
+- Paste the Below code before `</head>` closing tag.
 
 ```html
 <script src="./comments.js">
 <link rel="stylesheet" href="./comments.css" />
+```
+
+- Then, paste the Below code where you want to show the comments.
+
+```html
+<div id='comments'></div>
 ```
 
 ### :pen: Usage
@@ -107,7 +114,7 @@ If you open your static website or blog, you will see the comments section like 
 
 ### :white_check_mark: TODO
 
-- [ ] Ability to add comment section based on div element
+- [x] Ability to add comment section based on div element
 - [ ] Click to load user's comments
 - [ ] Add native styling instead of Tailwind CSS
 - [ ] Add Docker support
