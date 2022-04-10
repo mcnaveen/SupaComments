@@ -37,21 +37,18 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/comments.js'
 	},
 	plugins: [
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production,
-				css: (css) => {
-					css.write('public/build/bundle.css');
-				  }
 			}
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
-		css({ output: 'bundle.css' }),
+		css({ output: 'comments.css' }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In

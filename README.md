@@ -86,14 +86,11 @@ Once you have the environment variables set, run the following command to start 
 yarn build
 ```
 
-- This will create a `bundle.js` file under the `pubic` directory.
+- This will create a `comments.js` & `comments.css` files under the `pubic/build` directory.
 
+### :pen: Usage
 
-- You can rename the `bundle.js` file to `comments.js` & `index.css` file to `comments.css` if you want.
-
-- Then, import the `bundle.js` & `index.css` file in your static website or blog.
-
-- Paste the Below code before `</head>` closing tag.
+- To import the `comments.js` & `comments.css` file, paste the below code before `</head>` closing tag.
 
 ```html
 <script src="./comments.js">
@@ -106,9 +103,7 @@ yarn build
 <div id='comments'></div>
 ```
 
-### :pen: Usage
-
-If you open your static website or blog, you will see the comments section like below.
+Now, If you open your static website or blog, you will see the comments section like below.
 
 ![Comments Example](./images/comments.png)
 
