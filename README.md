@@ -18,6 +18,8 @@ SupaComments js bundle is less than 25kb and CSS bundle is less than 5kb.
 
 ![SupaComments](./images/lightweight.png)
 
+![Page Speed Insights](./images/psi.png)
+
 ### :package: Requirements
 
 ```
