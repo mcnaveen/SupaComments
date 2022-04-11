@@ -3,7 +3,7 @@
 ![SupaComments](./images/cover.png)
 > :zap: A blazing fast, lightweight, and open source comment system for your static website, blogs
 
-![Build](https://github.com/mcnaveen/SupaComments/workflows/build/badge.svg)
+![build](https://github.com/mcnaveen/SupaComments/actions/workflows/build.yml/badge.svg)
 ### :rocket: Demo
 
 You can visit the Below demo blog post to see the SupaComments in action.
