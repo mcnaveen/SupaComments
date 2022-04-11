@@ -122,7 +122,7 @@ Now, If you open your static website or blog, you will see the comments section 
 
 > These are the planned features, if you have any feature request, please open an feature request on [Github](https://github.com/mcnaveen/SupaComments/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
-### :i_love_you_hand_sign: Contributions
+### :books: Contributions
 Checkout the [Contributing Guide](CONTRIBUTION.md)
 ### Breaking Changes
 :warning: Use it with caution, Breaking changes ahead!
