@@ -1,11 +1,9 @@
-## SupaComments
-
-> :zap: A blazing fast, lightweight, and open source comment system for your static website, blogs
-
-> :warning: Use it with caution, it's not fully ready for production usage.
+## SupaComments 
 
 ![SupaComments](./images/cover.png)
+> :zap: A blazing fast, lightweight, and open source comment system for your static website, blogs
 
+![Build](https://github.com/mcnaveen/SupaComments/workflows/build/badge.svg)
 ### :rocket: Demo
 
 You can visit the Below demo blog post to see the SupaComments in action.
@@ -52,8 +50,8 @@ yarn install
 cp .env.example .env
 ```
 
-- In the `app.supabase.io` create a new project and database.
-- Table name: `comments`
+- In the [Supabase Dashboard](https://app.supabase.io) create a new project and database.
+- Table name should be: `comments`
 - Make sure you have the same table structure like below.
 
 ```sql
@@ -70,7 +68,7 @@ show - boolean
 
 ![Table Structure](./images/db.png)
 
-- [Supabase Guide for Creating API URL and Key](https://supabase.com/docs/guides/api#api-url-and-keys)
+- Copy API URL and Key ([Supabase Guide for Creating API URL and Key](https://supabase.com/docs/guides/api#api-url-and-keys))
 - Now open the `.env` and change the values copied from the above step
 - Change the Hostname to your domain name without http:// or https:// and trailing slash
 
@@ -111,7 +109,7 @@ Now, If you open your static website or blog, you will see the comments section 
 
 ![Comments Example](./images/comments.png)
 
-### :white_check_mark: TODO
+### :white_check_mark: TODO/Features
 
 - [x] Ability to add comment section based on div element
 - [ ] Click to load user's comments
@@ -124,26 +122,25 @@ Now, If you open your static website or blog, you will see the comments section 
 
 > These are the planned features, if you have any feature request, please open an feature request on [Github](https://github.com/mcnaveen/SupaComments/issues/new?assignees=&labels=&template=feature_request.md&title=)
 
-### :pray: Additional Information
-
-This project uses [Supabase](https://supabase.com) for the database, [Svelte](https://svelte.dev/) for the frontend and [Tailwind CSS](https://tailwindcss.com/) for the styling and Demo is built with [Gatsby MDX Starter](https://github.com/mcnaveen/gatsby-mdx-starter-blog).
-
-
-### Pull Request
-Feel free to add any new features or fixes.
-
+### :i_love_you_hand_sign: Contributions
+Checkout the [Contributing Guide](CONTRIBUTION.md)
 ### Breaking Changes
-This project is still in beta and may contain breaking changes.
-
-### License
-
-Copyright (c) 2022 [MC.Naveen](https://mcnaveen.com/)
-
+:warning: Use it with caution, Breaking changes ahead!
 
 ### Disclaimer
 
 You can add features and fixes but please don't claim this project as your own.
 
+### :pray: Additional Information
+
+This project uses [Supabase](https://supabase.com) for the database, [Svelte](https://svelte.dev/) for the frontend and [Tailwind CSS](https://tailwindcss.com/) for the styling and Demo is built with [Gatsby MDX Starter](https://github.com/mcnaveen/gatsby-mdx-starter-blog).
+
+
 ### :green_heart: Message
 
 I hope you find this project useful. If you have any questions, please create an issue.
+
+
+### License
+
+Copyright (c) 2022 [SupaComments](LICENSE)
