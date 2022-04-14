@@ -1,6 +1,6 @@
 {
   "name": "SupaComments",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "watch:tailwind": "postcss public/tailwind.css -o public/build/comments.css -w",

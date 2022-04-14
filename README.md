@@ -102,10 +102,10 @@ yarn build
 - Example: `mysupacomments.com`
 
 ```html
-<div id="comments" data-url="yoursite.com" loadmore="false"></div>
+<div id="comments" data-url="yoursite.com" clickToLoad="false"></div>
 ```
 
-- Optionally, You can set the `loadmore` attribute to `true` to disable autoloading of comments, the User has to click Load Comments button. (Default is `false`)
+- Optionally, You can set the `clickToLoad` attribute to `true` to disable autoloading of comments, the User has to click Load Comments button. (Default is `false`)
 
 Now, If you open your static website or blog, you will see the comments section like below.
 

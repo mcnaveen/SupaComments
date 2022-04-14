@@ -4,12 +4,12 @@
   const postPath = window.location.pathname;
   const hostURL = window.location.host;
   export let appUrl;
-  export let loadMore;
+  export let clickToLoad;
 
   const Props = {
     hostURL,
     postPath,
-    loadMore,
+    clickToLoad,
   };
 </script>
 

@@ -4,11 +4,11 @@
   import { generateFromString } from "generate-avatar";
   export let postPath;
   let loading = true;
-  export let loadMore;
-  let enableLoadMore;
+  export let clickToLoad;
+  let enableclickToLoad;
 
   export const comments = async () => {
-    enableLoadMore = false;
+    enableclickToLoad = false;
     const { data, error } = await supabase
       .from("comments")
       .select()
@@ -27,10 +27,10 @@
     }
   };
 
-  if (loadMore) {
-    enableLoadMore = true;
+  if (clickToLoad) {
+    enableclickToLoad = true;
   } else {
-    enableLoadMore = false;
+    enableclickToLoad = false;
     comments();
   }
 </script>
@@ -42,7 +42,7 @@
         <div class="w-full p-3">
           <h3 class="text-gray-700 text-2xl font-bold">User Comments</h3>
         </div>
-        {#if enableLoadMore}
+        {#if enableclickToLoad}
           <div class="w-full p-3">
             <button
               class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
