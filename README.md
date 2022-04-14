@@ -70,12 +70,10 @@ show - boolean
 
 - Copy API URL and Key ([Supabase Guide for Creating API URL and Key](https://supabase.com/docs/guides/api#api-url-and-keys))
 - Now open the `.env` and change the values copied from the above step
-- Change the Hostname to your domain name without http:// or https:// and trailing slash
 
 > ### Example
 >
 > ```
-> SUPACOMMENT_HOST_URL=supabase.com
 > SUPACOMMENT_SUPABASE_URL=https://xxxxxxxxxxxx.supabase.co
 > SUPACOMMENT_SUPABASE_ANON_KEY=xxxxxxxxxxxxxxxxx
 > ```
@@ -100,10 +98,14 @@ yarn build
 ```
 
 - Then, paste the Below code where you want to show the comments.
+- Change the `yoursite.com` to your website URL. (No https:// or http:// or / at the end)
+- Example: `mysupacomments.com`
 
 ```html
-<div id='comments'></div>
+<div id="comments" data-url="yoursite.com" loadmore="false"></div>
 ```
+
+- Optionally, You can set the `loadmore` attribute to `true` to disable autoloading of comments, the User has to click Load Comments button. (Default is `false`)
 
 Now, If you open your static website or blog, you will see the comments section like below.
 
@@ -112,7 +114,7 @@ Now, If you open your static website or blog, you will see the comments section 
 ### :white_check_mark: TODO/Features
 
 - [x] Ability to add comment section based on div element
-- [ ] Click to load user's comments
+- [x] Click to load user's comments
 - [ ] Add native styling instead of Tailwind CSS
 - [ ] Add Docker support
 - [ ] Add Reply to comment feature
@@ -133,7 +135,7 @@ You can add features and fixes but please don't claim this project as your own.
 
 ### :pray: Additional Information
 
-This project uses [Supabase](https://supabase.com) for the database, [Svelte](https://svelte.dev/) for the frontend and [Tailwind CSS](https://tailwindcss.com/) for the styling and Demo is built with [Gatsby MDX Starter](https://github.com/mcnaveen/gatsby-mdx-starter-blog).
+This project uses [Supabase](https://supabase.com) for the database, [Svelte](https://svelte.dev/) for the frontend and [Tailwind CSS](https://tailwindcss.com/) for the styling and Demo is built with Next.js
 
 
 ### :green_heart: Message

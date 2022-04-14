@@ -1,6 +1,6 @@
 <script>
   import { supabase } from "../supabaseClient";
-  export let url;
+  export let postPath;
   let name;
   let email;
   let comment;
@@ -9,7 +9,7 @@
   const checkAndInsert = async () => {
     if (name && comment) {
       const { data, error } = await supabase.from("comments").insert({
-        postURL: url,
+        postURL: postPath,
         name: name,
         email: email,
         comment: comment,
@@ -87,5 +87,4 @@
 </main>
 
 <style>
-  
 </style>
