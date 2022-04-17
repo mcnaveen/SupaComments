@@ -3,12 +3,15 @@
 ![SupaComments](./images/cover.png)
 > :zap: A blazing fast, lightweight, and open source comment system for your static website, blogs
 
-![build](https://github.com/mcnaveen/SupaComments/actions/workflows/build.yml/badge.svg)
+![build](https://github.com/mcnaveen/SupaComments/actions/workflows/build.yml/badge.svg) 
+
+<a href="https://www.producthunt.com/posts/supacomments?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-supacomments" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=341628&theme=light&period=daily" alt="SupaComments - A&#0032;blazing&#0032;fast&#0032;comment&#0032;system&#0032;for&#0032;your&#0032;JamStack&#0032;sites | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 ### :rocket: Demo
 
 You can visit the Below demo blog post to see the SupaComments in action.
 
-> [https://supacomments.netlify.app/abc/](https://supacomments.netlify.app/abc/)
+> [https://supacomments.vercel.app/demo/](https://supacomments.vercel.app/demo/)
 
 ### :magic_wand: Lightweight
 
