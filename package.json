@@ -18,7 +18,7 @@
     "autoprefixer": "10.4.7",
     "concurrently": "7.1.0",
     "cross-env": "7.0.3",
-    "dotenv": "16.0.0",
+    "dotenv": "16.0.1",
     "postcss-cli": "9.1.0",
     "rollup": "2.71.1",
     "rollup-plugin-css-only": "3.1.0",
