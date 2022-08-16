@@ -1,5 +1,7 @@
 ## SupaComments 
 
+> 🔥 This Project will be renamed and you can expect some bigger features soon. (Updated: 16/08/2022)
+
 ![SupaComments](./images/cover.png)
 > :zap: A blazing fast, lightweight, and open source comment system for your static website, blogs
 
